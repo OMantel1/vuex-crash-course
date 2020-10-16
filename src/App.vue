@@ -1,10 +1,7 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <header>Vuex Crash Course</header>
+    <Todos />
   </div>
 </template>
 
@@ -30,3 +27,12 @@
   color: #42b983;
 }
 </style>
+<script>
+import Todos from "@/components/Todos.vue";
+export default {
+  name: "app",
+  components: {
+    Todos,
+  },
+};
+</script>
