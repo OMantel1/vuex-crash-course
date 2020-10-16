@@ -25,8 +25,10 @@ export default {
 
 <style>
 .todos {
-  max-width: 500px;
+  max-width: 800px;
   margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 .todo {
   border: solid rgb(70, 70, 70) 1px;
